@@ -22,7 +22,7 @@ RPG.GameState = {
       left: RPG.game.input.keyboard.addKey(Phaser.Keyboard.A),
       right: RPG.game.input.keyboard.addKey(Phaser.Keyboard.D),
     };
-    
+
   },
   create: function() {   
     
@@ -39,7 +39,7 @@ RPG.GameState = {
     this.game.physics.arcade.collide(this.player, this.portals, this.warpPlayer);
 
 
-    if (this.cursors.down.isDown){
+    if (this.cursor.down.isDown){
       this.noClip = true;
     }else if(this.cursors.down.isUp){
       this.noClip = false;
@@ -139,21 +139,6 @@ RPG.GameState = {
       this.portals.add(portal);
     }
     this.portals.setAll('body.immovable', true);
-    /*
-    this.portal1 = this.add.sprite(portalArray[0].x, portalArray[0].y, 'arrow');
-    this.portal1.name = portalArray[0].properties.direction;
-    this.portal2 = this.add.sprite(portalArray[1].x, portalArray[1].y, 'arrow');
-    this.portal2.name = portalArray[1].properties.direction;
-    this.portal3 = this.add.sprite(portalArray[2].x, portalArray[2].y, 'arrow');
-    this.portal3.name = portalArray[2].properties.direction;
-    this.portal4 = this.add.sprite(portalArray[3].x, portalArray[3].y, 'arrow');
-    this.portal4.name = portalArray[3].properties.direction;
-    
-    this.portals.add(this.portal1);
-    this.portals.add(this.portal2);
-    this.portals.add(this.portal3);
-    this.portals.add(this.portal4);
-    */
     
     
   
