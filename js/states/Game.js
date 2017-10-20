@@ -190,15 +190,37 @@ RPG.GameState = {
     this.game.state.start('Game', true, false, '0-0');
   },
   warpPlayer: function(player, portal){
-    console.log(portal.direction+':'+ this.currentLevel);
-    if(portal.direction == 'up'){
-      player.data.mapY += 1;
-      var mapIndex = {
-        xIndex: player.data.mapX,
-        yIndex: player.data.mapY, 
-      };
-      RPG.game.state.start('Game', true, false, mapIndex);
-    }
+    //console.log(portal.direction+':'+ this.currentLevel);
+    
+      if(portal.direction == 'up'&& player.data.mapY < 5){
+        player.data.mapY += 1;
+        var mapIndex = {
+          xIndex: player.data.mapX,
+          yIndex: player.data.mapY, 
+        };
+        RPG.game.state.start('Game', true, false, mapIndex);
+      }else if(portal.direction == 'down' && player.data.mapY > 0){
+        player.data.mapY += -1;
+        mapIndex = {
+          xIndex: player.data.mapX,
+          yIndex: player.data.mapY
+        };
+        RPG.game.state.start('Game', true, false, mapIndex);
+      }else if(portal.direction == 'left' && player.data.mapX > 0){
+        player.data.mapX += -1;
+        mapIndex = {
+          xIndex: player.data.mapX,
+          yIndex: player.data.mapY
+        };
+        RPG.game.state.start('Game', true, false, mapIndex);
+      }else if(portal.direction == 'right' && player.data.mapX < 5){
+        player.data.mapX += 1;
+        mapIndex = {
+          xIndex: player.data.mapX,
+          yIndex: player.data.mapY
+        };
+        RPG.game.state.start('Game', true, false, mapIndex);
+      }
   },
   findObjectsByType: function(targetType, tilemap, layer){
     var result = [];
