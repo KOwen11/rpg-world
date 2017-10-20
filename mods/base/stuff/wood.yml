@@ -1,0 +1,109 @@
+---
+name: wood
+
+info: The hard fibrous material that forms the main substance of the trunk or branches of a tree or shrub.
+
+roles:
+- resource
+
+stats:
+  size: 3
+  fuel: 2
+  verity: 1
+  durable: 1
+
+traits:
+- 
+  name: cut
+  mod:
+    verity: 3
+- 
+  name: dead
+  mod:
+    fuel: 2
+    durable: -1
+- 
+  name: rotted
+  mod:
+    fuel: 1
+    durable: -2
+- 
+  name: long
+  mod:
+    size: 1
+    fuel: 1
+- 
+  name: short
+  mod:
+    size: -1
+    fuel: -1
+- 
+  name: bowed
+  info: Warp on the face of a board from end to end.
+  mod:
+    durable: -1
+    verity: -1
+- 
+  name: checked
+  info: Crack along the wood's annual growth rings, not passing through the entire thickness of the wood.
+  mod:
+    durable: -1
+- 
+  name: crooked
+  info: Warp along the edge line, also known as crown.
+  mod:
+    durable: -1
+    verity: -1
+- 
+  name: cupped
+  info: Hollow across the face of a board.
+  mod:
+    durable: -1
+    verity: -2
+- 
+  name: knot
+  info: A loose or dead knot, surrounded by a dark ring, may fall out or may have already left a hole.
+  mod:
+    durable: -1
+- 
+  name: snake
+  info: Separation of grain between the growth rings, often extending along the board's face and sometimes below its surface.
+  mod:
+    durable: -2
+- 
+  name: split
+  info: Crack going all the way through the piece of wood, commonly at the ends.
+  mod:
+    durable: -2
+- 
+  name: twist
+  info: Multiple bends in a board.
+  mod:
+    durable: -1
+    verity: -2
+- 
+  name: reinforced
+  info: Skillfully augmented with clamps in strategic positions in order to improve the strength and verity of the form.
+  mod:
+    durable: 1
+    verity: 1
+
+materials:
+-
+  name: rosewood
+  info: Easily Identified by the pink blossoms and jet black bark.
+  sprite: black
+  mod:
+    durable: 3
+-
+  name: broadleaf
+  info: Characteristic leaves larger than the main trunk. Common to the LowLands and Forest areas.
+  sprite: green
+  mod:
+    durable: 2
+-
+  name: dread
+  info: Each leaf releases a poisonous vapor that can be useful or nauseating.
+  sprite: brown
+  mod:
+    durable: 2

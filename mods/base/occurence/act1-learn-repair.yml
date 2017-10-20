@@ -1,0 +1,43 @@
+name: learn how to repair structures
+type: special
+prerequisites:
+  act: 1
+  place: ancora
+  section: 7
+  subsection: player-territory
+
+steps:
+-
+  mood: instructing
+  person:
+    name: dean
+    lines: 
+    - heya!
+    - Why don't you give me a hand over here?
+-
+  person:
+    name: dean
+    objective:
+      name: move towards player
+       actions: approach
+       target:
+         tags:
+         - p1
+         - player
+-
+  person:
+    name: dean
+    lines: 
+    - We need to pull off all the old rotting wood.
+    - Here. Take this <i>wedge</i>
+- 
+  person:
+    name: dean
+    objective:
+      name: give player a wedge
+      actions: give
+      params: wedge
+      target:
+        tags:
+        - p1
+        - player

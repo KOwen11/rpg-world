@@ -1,0 +1,41 @@
+---
+name: crash-site
+place: crash-site
+section: 1
+
+map:
+  base: sand
+
+  subsections:
+  -
+    height: 10
+    name: intro
+    type: subsection
+    width: 10
+    x: 250
+    y: 250
+
+  fixed-tiles:
+  -
+    name: welcome to soty
+    subsection: intro
+    x: 5
+    y: 5
+    tiles:
+    - [14,14,14,14,14]
+    - [14,14,14,14,14]
+    - [14,14,14,14,14]
+    - [14,14,14,14,14]
+    - [14,14,14,14,14]
+  
+  markers:
+  -
+    name: player-spawn
+    subsection: intro
+    x: 5
+    y: 1
+  -
+    name: victoria-spawn
+    subsection: intro
+    x: 4
+    y: 1

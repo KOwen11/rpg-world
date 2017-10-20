@@ -1,0 +1,56 @@
+---
+name: satchel
+
+info: A satchel is an easy to use accessory that improves a persons ability to carry items.
+
+roles:
+- apparel
+
+stats:
+  size: 2
+  bundle: 2
+  pockets: 2
+  speed: -1
+
+traits:
+- 
+  name: superior
+  info: A design that improves the bundle item carry capacity.
+  mod:
+    bundle: 1
+- 
+  name: fitted
+  info: Custom tailored to fit your body. The snug fit enables better mobility.
+  mod:
+    speed: 1
+- 
+  name: worn
+  info: This has been used well and is starting to show its age.
+  mod:
+    pockets: -1
+- 
+  name: damaged
+  info: Its time to get a new satchel.
+  mod:
+    bundle: -1
+    pockets: -2
+    speed: -1
+
+materials:
+-
+  name: grass
+  sprite: satchel-green
+  mod:
+    speed: 1
+-
+  name: leather
+  sprite: satchel-brown
+  mod:
+    pockets: 2
+-
+  name: wood
+  sprite: satchel-wood
+  mod:
+    bundle: 1
+    speed: -1
+    pockets: 1

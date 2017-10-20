@@ -1,0 +1,26 @@
+---
+name: lumberjack
+
+schedule:
+-
+  name: base schedule
+  type: base
+  prerequisites:
+    act: all
+    season: all
+    days: all
+    time: all
+    place: ancora
+    section: 7
+    subsection: lumberjack-territory
+  
+  objective:
+    name: stare at the fire
+    actions:
+      - approach
+      - face
+      - idle
+    target:
+      owner: lumberjack
+      tags:
+      - fireplace

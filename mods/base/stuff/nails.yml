@@ -1,0 +1,26 @@
+---
+name: nails
+
+info: Used to bind together two pieces of wood.
+
+roles:
+- component
+
+symbol: n
+
+stats:
+  size: 1
+
+blueprint:
+- [1]
+
+traits:
+-
+  name: bent
+  stats:
+    verity: -3
+-
+  name: rusted
+  stats:
+    durable: -1
+

@@ -1,0 +1,80 @@
+---
+name: act1-scene1
+note: EXT. East Beach - NIGHT
+type: once
+
+prerequisites:
+  act: 1
+  place: crash-site
+  subsection: intro
+
+steps:
+- 
+  screen:
+    state: dark
+-
+  mood: storming
+  typedOptions:
+    typeSpeed: 40
+  dialog:
+    lines: <i>panicked murmering</i>
+-
+  typedOptions:
+    typeSpeed: 80
+  person:
+    name: jeff
+    lines: aaaaaooooouuuuuch! My Leg! My Leg!
+- 
+  typedOptions:
+    typeSpeed: 65
+  person:
+    name: danielle
+    lines: 
+    - This guy's got a nasty tibia fracture over here!
+    - Don't just stand there and stare! Make yourself useful and give me your shirt.
+    - <strong>NOW!</strong>
+ - 
+   screen: 
+     state: darkFlashing
+   typedOptions:
+     typeSpeed: 45
+   person:
+     name: victoria
+     objective:
+       name: move towards player
+       actions: approach
+       target:
+         tags:
+         - p1
+         - player
+     lines: 
+     - <i>gasp</i>
+     - Are those... <i>people</i>?
+  -
+    person:
+      name: victoria
+      objective:
+        name: show curiosity
+        actions: animate
+        params: question
+        target: 
+          tags: 
+          - self
+      lines: Who are you? what happened here?
+  -
+    system: 
+      name: characterCreation
+  - 
+    person:
+      name: victoria
+    lines: Are you okay? $name? $name!
+  - 
+    screen:
+     state: fadeToBlack
+  - 
+    system: 
+      name: teleportTo
+      params:
+        place: ancora
+        section: 7
+        marker: player-intro-teleport

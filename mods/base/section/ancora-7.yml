@@ -1,0 +1,87 @@
+---
+name: ancora-southern-road
+place: ancora
+section: 7
+
+map:
+  base: grass
+
+  subsections:
+  -
+    height: 50,
+    name: lumberjack-territory,
+    type: subsection,
+    width: 50,
+    x: 225,
+    y: 50
+  -
+     height: 25,
+     name: post-drop,
+     type: subsection,
+     width: 25,
+     x: 212.5,
+     y: 475
+  -
+     height: 50,
+     name: player-territory,
+     type: subsection,
+     width: 50,
+     x: 250,
+     y: 250
+
+  roads:
+  -
+    height: 500,
+    name: south-road,
+    type: road,
+    width: 25,
+    x: 187.5,
+    y: 0
+  -
+    height: 25,
+    name: west-road,
+    type: road,
+    width: 200,
+    x: 0,
+    y: 37.5
+
+  fixed-tiles:
+  -
+    name: player-farm-house-ground
+    subsection: player-territory
+    x: 30
+    y: 100
+    tiles:
+    - [71,71,71,71,71,71,71,71,71,71]
+    - [71,71,71,71,71,71,71,71,71,71]
+    - [71,71,71,71,71,71,71,71,71,71]
+    - [71,71,71,71,71,71,71,71,71,71]
+    - [71,71,71,71,71,71,71,71,71,71]
+    
+  fixed-bodys:
+  - 
+    name: player-farm-house
+    subsection: player-territory
+    x: 50
+    y: 125
+  -
+    name: player-barn
+    subsection: player-territory
+    x: 100
+    y: 130
+  -
+    name: lumberjack-hearth
+    subsection: lumberjack-territory
+    x: 20
+    y: 10
+    tags:
+    - fireplace
+    - fire
+    - heat
+
+  markers:
+  -
+    name: player-intro-teleport
+    subsection: player-territory
+    x: 0
+    y: 0

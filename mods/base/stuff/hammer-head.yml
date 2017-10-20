@@ -1,0 +1,28 @@
+---
+name: hammer-head
+
+info: Attach to the end of a stick to create a useful smashing tool.
+
+roles:
+- component
+
+symbol: h
+
+stats:
+  size: 1
+
+blueprint:
+- [1]
+
+materials:
+-
+  name: rock
+  sprite: ?-rock
+  mod:
+    effort: 1
+-
+  name: iron
+  sprite: ?-iron
+  mod:
+    durable: 1
+    efficacy: 1

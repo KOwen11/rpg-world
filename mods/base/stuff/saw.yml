@@ -1,0 +1,22 @@
+---
+name: saw
+
+info: Used to slice logs into boards.
+
+roles:
+- slice
+
+stats:
+  size: 2
+  durable: 2
+  effort: 3
+  efficacy: 3
+
+blueprint:
+- [1, 2, 2]
+- [0, 0, 0]
+- [0, 0, 0]
+
+components:
+- handle
+- serrated-blade

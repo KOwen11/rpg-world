@@ -1,0 +1,22 @@
+---
+name: axe
+
+info: Used to fell trees and chop lumber.
+
+roles:
+- chop
+
+stats:
+  size: 3
+  durable: 3
+  effort: 3
+  efficacy: 3
+
+blueprint:
+- [1, 2, 0]
+- [1, 0, 0]
+- [1, 0, 0]
+
+components:
+- stick
+- axe-head

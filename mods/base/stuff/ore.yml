@@ -1,0 +1,41 @@
+---
+name: ore
+
+info: a naturally occurring solid material from which a metal or valuable mineral can be profitably extracted.
+
+roles:
+- resource
+
+stats:
+  size: 4
+  fuel: 0
+  verity: 0
+  durable: 3
+
+traits:
+- 
+  name: rich
+  mod:
+    count: 1
+- 
+  name: hollow
+  mod:
+    durable: -1
+- 
+  name: cracked
+  mod:
+    durable: -2
+
+materials:
+-
+  name: iron
+  sprite: orange
+  mod:
+    durable: 1
+-
+  name: aluminum
+  sprite: silver
+-
+  name: copper
+  info: Each leaf releases a poisonous vapor that can be useful or nauseating.
+  sprite: bronze

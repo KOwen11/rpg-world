@@ -1,0 +1,57 @@
+---
+name: stick
+
+info: General purpose technology.
+
+roles:
+- component
+
+symbol: l
+
+stats:
+  size: 2
+  verity: 3
+  durable: 2
+
+blueprint:
+- [1, 0, 0]
+- [1, 0, 0]
+- [1, 0, 0]
+
+traits:
+- 
+  name: short
+  stats: 
+    size: -1
+  override:
+    sprite: ?-short
+    blueprint:
+    - [1, 0]
+    - [1, 0]
+    
+-
+  name: long
+  stats:
+    size: 1
+  override:
+    sprite: ?-long
+    blueprint:
+    - [1, 0, 0, 0]
+    - [1, 0, 0, 0]
+    - [1, 0, 0, 0]
+    - [1, 0, 0, 0]
+-
+  name: cracked
+  stats:
+    verity: -1
+    durable: -1
+
+materials:
+-
+  name: wood
+-
+  name: iron
+  stats: 
+    effort: 1
+    durable: 1
+    verity: 1

@@ -1,0 +1,21 @@
+---
+name: wedge
+
+info: Used to seperate components from buildable constructs.
+
+roles:
+- unjoin
+
+stats:
+  size: 2
+  durable: 3
+  effort: 2
+  efficacy: 3
+
+blueprint:
+- [1, 0, 0]
+- [1, 0, 0]
+- [0, 0, 0]
+
+components:
+- stick

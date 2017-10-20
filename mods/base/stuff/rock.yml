@@ -1,0 +1,27 @@
+---
+name: rock
+
+info: a solid heterogeneous mixture of one or more minerals.
+
+roles:
+- resource
+
+stats:
+  size: 4
+  fuel: 0
+  verity: 0
+  durable: 2
+
+traits:
+- 
+  name: rich
+  mod:
+    count: 1
+- 
+  name: hollow
+  mod:
+    durable: -1
+- 
+  name: cracked
+  mod:
+    durable: -2

@@ -1,0 +1,41 @@
+---
+name: axe-head
+
+info: Attach to the end of a stick to create a useful chopping tool.
+
+roles:
+- component
+
+symbol: x
+
+stats:
+  size: 2
+
+blueprint:
+- [1]
+
+materials:
+-
+  name: rock
+  sprite: ?-rock
+  mod:
+    effort: -1
+    efficacy: -1
+-
+  name: iron
+  sprite: ?-iron
+  mod:
+    durable: 1
+    effort: 1
+    efficacy: 1
+-
+  name: aluminum
+  sprite: ?-silver
+  mod:
+    durable: -1
+    effort: -1
+-
+  name: copper
+  sprite: ?-copper
+  mod:
+    efficacy: 1

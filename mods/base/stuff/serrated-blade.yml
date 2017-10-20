@@ -1,0 +1,36 @@
+---
+name: serrated-blade
+
+info: Attach to the end of a handle to create a precise slicing tool.
+
+roles:
+- component
+
+symbol: s
+
+stats:
+  size: 2
+
+blueprint:
+- [1, 0]
+- [1, 0]
+
+materials:
+-
+  name: rock
+  sprite: ?-rock
+  mod:
+    durable: 1
+    effort: 1
+    efficacy: -1
+-
+  name: iron
+  sprite: ?-iron
+  mod:
+    effort: -1
+    efficacy: 1
+-
+  name: aluminum
+  sprite: ?-silver
+  mod:
+    effort: -1
