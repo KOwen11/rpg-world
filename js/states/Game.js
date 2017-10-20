@@ -25,7 +25,7 @@ RPG.GameState = {
     
   },
   create: function() {   
-    
+    this.stuffList = [];
     this.game.touchControls = this.game.plugins.add(Phaser.Plugin.TouchControls);
 
     this.loadLevel();
@@ -136,7 +136,11 @@ RPG.GameState = {
       var x = this.game.input.mousePointer.worldX;
       var y = this.game.input.mousePointer.worldY;
       this.spriteToInput( this.player, this.PLAYER_SPEED, x, y);
-      
+    if(this.cursors.right.isDown){
+      var file = prompt("Please enter the file name", "here");
+      console.log(this.getStuff("./mods/base/stuff/"+file));
+    }
+    
     }
     if(this.player.body.y > this.destination.y - 5 && this.player.body.y < this.destination.y + 5){
       this.player.body.velocity.y = 0;
@@ -171,8 +175,8 @@ RPG.GameState = {
       this.spriteToInput(this.player, this.PLAYER_SPEED, this.destination.x, this.destination.y);
     }
   },  
-  discoverStuff: function(){
-    
+  getStuff: function(fileName){
+    //placeholder
   },
   spriteToInput: function(sprite, velocity, x, y){
     this.destination = {x: x, y: y};

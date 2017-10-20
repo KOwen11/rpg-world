@@ -28,7 +28,7 @@ RPG.PreloadState = {
 
     this.load.image('sword', 'assets/images/attack-icon.png');
     this.load.spritesheet('player', 'assets/images/player.png', 30, 30, 2, 0, 2);
-    this.load.image('tilesheet', 'assets/images/terrains.png');  
+    this.load.image('tilesheet', 'assets/images/terrains.png'); 
 
     //load game data
     /*
